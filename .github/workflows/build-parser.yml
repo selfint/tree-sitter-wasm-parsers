@@ -35,7 +35,7 @@ jobs:
       - name: Check if tag exists
         run: |
           git fetch --all --tags
-          git tags --list | grep $PARSER_TAG
+          git tag --list | grep $PARSER_TAG
       - name: Install tree-sitter cli
         run: npm install --global tree-sitter-cli
       - name: Download parser
