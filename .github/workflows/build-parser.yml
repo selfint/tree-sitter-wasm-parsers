@@ -10,7 +10,7 @@ on:
       parserName:
         description: ".wasm file name of parser (without .wasm extension), defaults to npmPackageName"
         type: string
-        required: false
+        required: true
       subdirectory:
         description: "Subdirectory containing the parser grammar"
         type: string
