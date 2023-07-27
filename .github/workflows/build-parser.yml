@@ -36,6 +36,7 @@ jobs:
         run: |
           git fetch --all --tags
           git tag --list | grep $PARSER_TAG
+          exit $((1 - $?))
       - name: Install tree-sitter cli
         run: npm install --global tree-sitter-cli
       - name: Download parser
